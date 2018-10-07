@@ -1,10 +1,10 @@
 {{ define "head" }}
-  {{ $url := strings.TrimRight "/" (printf "go.rafdel.co%s" .URL) }}
+  {{ $url := strings.TrimRight "/" (printf "go.kayandra.co%s" .URL) }}
   <meta name="go-import" content="{{ $url }} git {{ .Params.repo }}">
   <meta name="go-source" content="{{ $url }} {{ .Params.repo }} {{ .Params.repo }}/tree/master{/dir} {{ .Params.repo }}/tree/master{/dir}/{file}#L{line}">
   <meta http-equiv="refresh" content="0; url={{ .Params.repo }}">
 {{ end }}
 
 {{ define "main" }}
-  Nothing to see here. Please <a href="{{ .Params.repo }}">move along</a>. 
+  Nothing to see here. Please <a href="{{ .Params.repo }}">move along</a>.
 {{ end }}
